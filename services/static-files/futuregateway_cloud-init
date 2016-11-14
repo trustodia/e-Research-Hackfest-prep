@@ -1,0 +1,29 @@
+#cloud-config
+hostname: fg-hackfest
+fqdn: fg-hackfest.sci-gaia.eu
+manage_etc_hosts: true
+package_update: true
+package_upgrade: true
+users:
+  - name: ansible
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDq2Ejyci/TNDoj0STFlPRpgWhWHQbPks0LffVAIPRpFFdiZG7Gzz3Dv04AT2NaCw86rSPvGJw09qkczTG3RExceUtq+fo4x1m5EQVW1eYNstbO9tQb1hAPDFA5LXRBPBqNaFisUj2QxOSzccQlzCD5g/aaHF9J9DhXI48zqXUTT2q9myoqRkRKYYsoqUZL5q/jXIisyFPZmsExfZKd+Q0Ehag0veksq7BGULhp6Dmc7sYzXOj3KbRKUyDw7H/fkoNbvO4NCU6hLoaQRPpXwvvqVH3Olp28DQUW92+MNmanmWIq5Fw529Rt4XpxOE+sCnErebu9n25SeSEN7DvhhVJ mario@mario-ThinkPad
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+ajfknMIekBVAqGr8qVt49jmkwm54lriPDQO6TaHXueaR+ajkCvlTxmtNMv1sGmPdZKl8CMMZxvVekMKI/oWO+4ouZ4iVoAw6WP7GrbriF54O4uKb2QDgVz1KQv+zT2ofgh9rOzU+7oDMKVnRTOe/P2TNteG8zeE+z6vCd51TLMohBiw74N0vaM6LJthEjtpoyrD5NqksstYGdrKKVIu/Kyv6H0cc29lkuh8Ufb1PAkK4URKflJRLYHM2UZmQBncYknXqL5tHdpUKbLJdBX5ZZ2Vf4tG7+KUqf4YYNzuREyxHGQPcoPlIK1EnmnpApZXNxqda++KpAodwkHF3Kbe3
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+runcmd:
+  # Configure ufw
+     - sed -i -e '/^IPV6/s/^.*$/IPV6=no/' /etc/default/ufw
+     - ufw enable
+     - ufw default deny incoming
+     - ufw default allow outgoing
+     - ufw allow ssh
+
+# Reboot
+power_state:
+     timeout: 120
+     delay: "+1"
+     message: Rebooting in 1 minute. Please save your work.
+     mode: reboot
+
