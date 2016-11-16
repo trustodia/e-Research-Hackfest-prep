@@ -1,0 +1,35 @@
+---
+site_name: lsu-hackfest
+# where do you want messages to go ?
+slack_channel: lagos-hackfest
+java6_name:
+  Debian: java-1.6.0-openjdk
+  RedHat: java-1.6.0-openjdk
+java7_name:
+  Debian: java-1.7.0-openjdk
+  RedHat: java-1.7.0-openjdk
+managed_prerequisites:
+ - python2.7
+ - python-simplejson
+prerequisites:
+  Debian:
+    - vim
+    - make
+    - git
+    - python-pip
+    - python-setuptools
+    - python-dev
+    - libssl-dev
+    - gcc
+    - nano
+    - joe
+    - libffi-dev
+  RedHat:
+    - vim
+    - make
+    - git
+    - python-pip
+    - python-setuptools
+    - python-devel
+    - gcc
+    - libffi-dev
