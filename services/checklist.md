@@ -43,7 +43,7 @@ Services necessary for the hackfest are :
        * [ ] Check whether you have access to the Nova interface, so that you can deploy machines using DevOps tools.
        * [ ] Run the deloyment-setup playbook.
      * Commercial provider : Request _large_ VM from your provider which will be used by all participants _or_ request a _small_ VM from your provider _per participant_
-  1. [ ] Ensure that the organiers ssh keys are assigned to a deployment user (_e.g._ `ansible`)
+  1. [ ] Ensure that the organisers ssh keys are assigned to a deployment user (_e.g._ `ansible`)
   1. [ ]
 
 
@@ -67,6 +67,7 @@ Services necessary for the hackfest are :
       ```
         nova floating-ip-associate fg-hackfest 151.97.41.44
       ```
+  1.
 
 ## Integration platform
 

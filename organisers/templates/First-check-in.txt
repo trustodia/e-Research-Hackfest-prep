@@ -1,0 +1,27 @@
+<html>
+
+Dear hackfest participants
+<p>
+  We are getting closer by the day to the hackfest in Lagos, and we're really looking forward to it. So far we have 14 registrants, but many more have been accepted. If you can't make it to the hackfest in Lagos, please let us know, else please <a href="https://indico.wacren.net/event/43/registration/register#/register">register</a> as soon as possible.
+
+</p>
+<p>
+  As you know, we want you all to come to the event as prepared as possible, and we've <a href=" http://www.africa-grid.org/hackfest-site/checklist/">prepared a checklist for you</a>.
+  Please <a href="http://www.africa-grid.org/hackfest-site//before-checklist/">check the tasks that you have to complete before coming to Lagos.</a>
+
+</p>
+
+<p>
+  As soon as you have created your github account, please let us know - reply to the <a href="http://discourse.sci-gaia.eu/t/lagos-hackfest-tell-us-about-yourself/2382">introduction topic</a>.
+
+  For any questions or problems, please open a topic on the <a href="http://discourse.sci-gaia.eu">forum</a>.
+
+  If you have problems logging in with federated identities, contact <a mailto:discourse-support@sci-gaia.eu">the forum support</a>.
+</p>
+<hrule>
+  Looking forward to doing great things with you all soon !
+<div>
+  Sci-GaIA Hackfest organisers.
+</div>
+
+</html>

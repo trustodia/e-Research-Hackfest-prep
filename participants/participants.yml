@@ -1,0 +1,161 @@
+---
+# E.g :
+# username:
+#     name: "Boss Dude"
+#     photo: boss-dude.jpg
+#     orcid: 0000-0001-1234-5678
+#     github: bossdude
+#     twitter: bossdude
+#     homepage: http://boss.dude
+#     org: umbrellacorp
+- name: "Yoseph Abate"
+  institute:
+  orcid:
+  github:
+    username: yosephabate
+    confirmed: no
+  twitter:
+  homepage: http://itsc.aait.edu.et
+  email: yosjudea@yahoo.com
+
+
+- name: "ABDULAZEEZ ADELOPO"
+  institute: UNIVERSITY OF IBADAN
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: aa.adelopo@gmail.com
+
+- name: Olutayo AJAYI
+  institute: Federal University of Agriculture, Abeokuta, Nigeria
+  orcid:
+  github:
+    username: olutayoajayi
+    confirmed: no
+  twitter:
+  homepage:
+  email: ajayiob@funaab.edu.ng
+
+
+- name: Oluwaseyi BABARINDE
+  institute: Federal University of Agriculture Abeokuta
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: babarindeos@funaab.edu.ng
+
+- name: Ekene Ezeasor
+  institute: Nnamdi Azikiwe University
+  orcid:
+  github:
+    username: ezeasorekene
+    confirmed: no
+  twitter:
+  homepage:
+  email:
+
+- name: Tochukwu Eze
+  institute: 	Nnamdi Azikiwe University
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: td.eze@unizik.edu.ng
+
+- name: Oluwadamilare Falola
+  institute:
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: dare.falola@cu.edu.ng
+
+- name: Trust Odia
+  institute:
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: 	trust.odia@covenantuniversity.edu.ng
+
+- name: David E Oguche
+  institute: 	ACEPRD University of Jos
+  orcid:
+  github:
+    username: Davazano
+    confirmed: no
+  twitter:
+  homepage:
+  email: davideoguche@gmail.com
+
+- name: Olusola Olabanjo
+  institute: Lagos State University, Ojo Lagos
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: olusola.olabanjo@lasu.edu.ng
+
+- name: Olawale OLAYIDE
+  institute: University of Ibadan
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: 	waleolayide@yahoo.com
+
+- name: BEHAILU OSRO
+  institute: Education Strategy Center
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: behailu.korma@yahoo.com
+
+- name: Segun oyeyiola
+  institute: Obafemi Awolowo University, Ife.
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: trinitysege@gmail.com
+
+- name: Prof. Ikemefuna UZOCHUKWU
+  institute: Nnamdi Azikiwe University Awka, Nigeria
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email: ic.uzochukwu@unizik.edu.ng
+
+- name:
+  institute:
+  orcid:
+  github:
+    username:
+    confirmed: no
+  twitter:
+  homepage:
+  email:
