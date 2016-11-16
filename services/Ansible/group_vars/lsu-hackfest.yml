@@ -1,0 +1,28 @@
+---
+site_name: lsu-hackfest
+ansible_user: ansible
+managed_prerequisites:
+ - python2.7
+ - python-simplejson
+prerequisites:
+  Debian:
+    - vim
+    - make
+    - git
+    - python-pip
+    - python-setuptools
+    - python-dev
+    - libssl-dev
+    - gcc
+    - nano
+    - joe
+    - libffi-dev
+  RedHat:
+    - vim
+    - make
+    - git
+    - python-pip
+    - python-setuptools
+    - python-devel
+    - gcc
+    - libffi-dev
