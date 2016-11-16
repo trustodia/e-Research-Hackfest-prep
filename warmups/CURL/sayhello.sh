@@ -16,7 +16,7 @@ if [ "${@}" = "" ]; then
 else
   SAYS="$@"
 fi
-echo "User "$(whoami)" says: $SAYS" | tee -i $DATAFILE 
+echo "User "$(whoami)" says: $SAYS" | tee -i $DATAFILE
 if [ -f "$INPFILE" ]; then
   echo "Receiving sayhello.txt file"
   cat $INPFILE 

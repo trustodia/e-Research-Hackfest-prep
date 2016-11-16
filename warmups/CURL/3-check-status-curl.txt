@@ -1,8 +1,8 @@
 ## COMMAND
-curl -X GET "http://151.97.41.66:8888/v1.0/tasks/16"
+`curl -X GET "http://151.97.41.66:8888/v1.0/tasks/16"`
 
 ## EXPECTED OUTPUT
-{
+```{
   "last_change": "2016-11-16T09:31:33Z",
   "input_files": [
     {
@@ -41,5 +41,4 @@ curl -X GET "http://151.97.41.66:8888/v1.0/tasks/16"
     }
   ],
   "application": "2"
-}
-
+}```
