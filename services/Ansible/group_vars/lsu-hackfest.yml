@@ -1,6 +1,13 @@
 ---
 site_name: lsu-hackfest
-ansible_user: ansible
+# where do you want messages to go ?
+slack_channel: lagos-hackfest
+java6_name:
+  Debian: java-1.6.0-openjdk
+  RedHat: java-1.6.0-openjdk
+java7_name:
+  Debian: java-1.7.0-openjdk
+  RedHat: java-1.7.0-openjdk
 managed_prerequisites:
  - python2.7
  - python-simplejson
