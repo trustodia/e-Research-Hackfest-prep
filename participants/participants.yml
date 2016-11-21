@@ -13,7 +13,7 @@
   orcid:
   github:
     username: yosephabate
-    confirmed: no
+    confirmed: yes
   twitter:
   homepage: http://itsc.aait.edu.et
   email: yosjudea@yahoo.com
@@ -23,8 +23,8 @@
   institute: UNIVERSITY OF IBADAN
   orcid:
   github:
-    username:
-    confirmed: no
+    username: adelopo
+    confirmed: yes
   twitter:
   homepage:
   email: aa.adelopo@gmail.com
@@ -33,8 +33,8 @@
   institute: Federal University of Agriculture, Abeokuta, Nigeria
   orcid:
   github:
-    username: olutayoajayi
-    confirmed: no
+    username: olutayoajayifunaab
+    confirmed: yes
   twitter:
   homepage:
   email: ajayiob@funaab.edu.ng
@@ -44,8 +44,8 @@
   institute: Federal University of Agriculture Abeokuta
   orcid:
   github:
-    username:
-    confirmed: no
+    username: babarindeos
+    confirmed: yes
   twitter:
   homepage:
   email: babarindeos@funaab.edu.ng
@@ -55,7 +55,7 @@
   orcid:
   github:
     username: ezeasorekene
-    confirmed: no
+    confirmed: yes
   twitter:
   homepage:
   email:
@@ -64,8 +64,8 @@
   institute: 	Nnamdi Azikiwe University
   orcid:
   github:
-    username:
-    confirmed: no
+    username: domisky2003
+    confirmed: yes
   twitter:
   homepage:
   email: td.eze@unizik.edu.ng
@@ -74,8 +74,8 @@
   institute:
   orcid:
   github:
-    username:
-    confirmed: no
+    username: damilare88
+    confirmed: yes
   twitter:
   homepage:
   email: dare.falola@cu.edu.ng
@@ -84,8 +84,8 @@
   institute:
   orcid:
   github:
-    username:
-    confirmed: no
+    username: trustodia
+    confirmed: yes
   twitter:
   homepage:
   email: 	trust.odia@covenantuniversity.edu.ng
@@ -95,7 +95,7 @@
   orcid:
   github:
     username: Davazano
-    confirmed: no
+    confirmed: yes
   twitter:
   homepage:
   email: davideoguche@gmail.com
@@ -104,8 +104,8 @@
   institute: Lagos State University, Ojo Lagos
   orcid:
   github:
-    username:
-    confirmed: no
+    username: olabanjoolusola
+    confirmed: yes
   twitter:
   homepage:
   email: olusola.olabanjo@lasu.edu.ng
@@ -114,8 +114,8 @@
   institute: University of Ibadan
   orcid:
   github:
-    username:
-    confirmed: no
+    username: waleolayide
+    confirmed: yes
   twitter:
   homepage:
   email: 	waleolayide@yahoo.com
@@ -124,8 +124,8 @@
   institute: Education Strategy Center
   orcid:
   github:
-    username:
-    confirmed: no
+    username: behailukorma
+    confirmed: yes
   twitter:
   homepage:
   email: behailu.korma@yahoo.com
@@ -134,8 +134,8 @@
   institute: Obafemi Awolowo University, Ife.
   orcid:
   github:
-    username:
-    confirmed: no
+    username: oyeyiola
+    confirmed: yes
   twitter:
   homepage:
   email: trinitysege@gmail.com
@@ -144,18 +144,89 @@
   institute: Nnamdi Azikiwe University Awka, Nigeria
   orcid:
   github:
-    username:
-    confirmed: no
+    username: icuzochukwu
+    confirmed: yes
   twitter:
   homepage:
   email: ic.uzochukwu@unizik.edu.ng
 
-- name:
+
+- name: Akanle Matthew Boladele
   institute:
   orcid:
   github:
-    username:
+    username: temitope123
+    confirmed: yes
+  twitter:
+  homepage:
+  email:
+
+- name: Taiwo Adigun
+  institute:
+  orcid:
+  github:
+    username: taiwofisayo
+    confirmed: yes
+  twitter:
+  homepage:
+  email:
+
+- name: Adeji Fabiyi
+  institute: Brunel University
+  orcid:
+  github:
+    username: adedeji19
+    confirmed: yes
+  twitter:
+  homepage:
+  email:
+
+- name: Collins Udanor
+  institute:
+  orcid:
+  github:
+    username: cudanor
+    confirmed: yes
+  twitter:
+  homepage:
+  email:
+
+- name: Toyin Enijuomelin
+  institute:
+  orcid:
+  github:
+    username: princetee
     confirmed: no
+  twitter:
+  homepage:
+  email:
+
+- name: Ohaeri UCHECHUKWU
+  institute:
+  orcid:
+  github:
+    username: lordmila
+    confirmed: yes
+  twitter:
+  homepage:
+  email:
+
+- name: Rising John Osazuwa
+  institute:
+  orcid:
+  github:
+    username: risingjohn
+    confirmed: yes
+  twitter:
+  homepage:
+  email:
+
+- name: Ohaeri UCHECHUKWU
+  institute:
+  orcid:
+  github:
+    username: lordmila
+    confirmed: yes
   twitter:
   homepage:
   email:
