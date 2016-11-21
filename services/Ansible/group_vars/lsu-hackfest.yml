@@ -33,3 +33,7 @@ prerequisites:
     - python-devel
     - gcc
     - libffi-dev
+  languages:
+    php:
+      - php-curl
+      - php-cli
