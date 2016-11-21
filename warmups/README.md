@@ -17,6 +17,7 @@ Each warmup should be tested. There is a top-level directory for the tests, whic
 
   * If you would like to add a component to the warmups, it should have at least 2 languages (_e.g._ curl and python)
   * Ensure that you provide means to _test_ the warmup - be sure to describe the dependency of  the test, if there are particular tools necessary to conduct the test.
+  * Ensure that the warmups and tests follow the same numbering schema
 
 ## FutureGateway warmups
 

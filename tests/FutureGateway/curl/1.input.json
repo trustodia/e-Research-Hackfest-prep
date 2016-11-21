@@ -1,0 +1,13 @@
+{
+    "application": "2",
+    "description": "sayhello@csgfsdk test run",
+    "arguments": ["\"I am saying hello!\""],
+    "output_files": [{
+        "name": "sayhello.data"
+    }],
+    "input_files": [{
+        "name": "sayhello.sh"
+    }, {
+        "name": "sayhello.txt"
+    }]
+}
