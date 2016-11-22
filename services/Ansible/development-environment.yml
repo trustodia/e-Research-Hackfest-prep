@@ -23,6 +23,8 @@
       username: "Ansible on {{ inventory_hostname }}"
       link_names: 1
       parse: 'full'
+    tags:
+      - slack
 
   - name: Low down dirty setup
     become: true
@@ -38,6 +40,8 @@
       username: "Ansible on {{ inventory_hostname }}"
       link_names: 1
       parse: 'full'
+    tags:
+      - slack
 
 - hosts: dev
   name: Deploy Ansible onto the lab
@@ -45,6 +49,7 @@
   - name: Pick up sensitive vars
     include_vars:
       file: "group_vars/passwords-{{ site_name }}.yml"
+
   - name: Announce the Config play
     slack:
       domain: ubuntunet.slack.com
@@ -54,7 +59,10 @@
       username: "Ansible on {{ inventory_hostname }}"
       link_names: 1
       parse: 'full'
-  - name: Install some basic stuff
+    tags:
+      - slack
+
+  - name: Install prerequisites
     become: true
     package:
       name: "{{ item }}"
@@ -67,6 +75,23 @@
       name: ansible
       state: present
 
+  - name: Pull in users
+    include_vars:
+      file: "../../participants/participants.yml"
+
+  - name: debug participants
+    debug:
+      var: participants
+
+  - name: Add users
+    become: true
+    user:
+      name: "{{ item.github.username }}"
+      createhome: true
+      generate_ssh_key: true
+    with_items: "{{ participants }}"
+
+
   - name: Announce the Config play outcome
     slack:
       domain: scigaia
@@ -76,20 +101,10 @@
       username: "Ansible on {{ inventory_hostname }}"
       link_names: 1
       parse: 'full'
+    tags:
+      - slack
 
-# This is a single loop over participants - should be done in a block
-# - name: Setup the users
-#   hosts: all
-#   - tasks:
-#     - name: Add the participant
-#       user:
-#         name: "{{ item.username }}"
-#         comment: "User added for {{ site_name }} DevOps bootcamp"
-#         state: present
-#         createhome: true
-#         generate_ssh_key: true
-#      with_items: "{{ participants }}"
-#
+
 #     - name: Ensure that the participant ssh key on Github is in authorized keys
 #       authorized_key:
 #         exclusive: no
