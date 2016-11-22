@@ -24,6 +24,8 @@ prerequisites:
     - nano
     - joe
     - libffi-dev
+    - php5-curl
+    - php5-cli
   RedHat:
     - vim
     - make
@@ -33,7 +35,5 @@ prerequisites:
     - python-devel
     - gcc
     - libffi-dev
-  languages:
-    php:
-      - php-curl
-      - php-cli
+    - php5-curl
+    - php5-cli
