@@ -79,10 +79,6 @@
     include_vars:
       file: "../../participants/participants.yml"
 
-  - name: debug participants
-    debug:
-      var: participants
-
   - name: Add users
     become: true
     user:
@@ -107,21 +103,17 @@
     git:
       repo: https://github.com/AAROC/hackfest-warmups
       dest: "/home/{{ item.github.username }}/hackfest-warmups"
+
     with_items:
       "{{ participants }}"
-
-  - name: Announce the Config play outcome
-    slack:
-      domain: scigaia
-      token: "{{ slack_token }}"
-      msg: "{{ inventory_hostname }} at {{ site_name }} now knows kung-fu :neo:"
-      channel: "#lagos-hackfest"
-      username: "Ansible on {{ inventory_hostname }}"
-      link_names: 1
-      parse: 'full'
-    tags:
-      - slack
-
+  - name: ensure that the repo belongs to the user
+    file:
+      state: directory
+      dest: "{{ item.github.username }}"
+      owner: "{{ item.github.username }}"
+      recurse: yes
+      group: "{{ item.github.username }}"
+    with_items: "{{ participants }}"
 
 #
 #     # - name: Ensure that the preferred editor is available
@@ -135,3 +127,92 @@
 #         name: core.editor
 #         value: "{{ item.git.core.editor}}"
 #         scope: global
+
+  - name: Announce the Config play outcome
+    slack:
+      domain: scigaia
+      token: "{{ slack_token }}"
+      msg: "{{ inventory_hostname }} at {{ site_name }} now knows kung-fu :neo:"
+      channel: "#lagos-hackfest"
+      username: "Ansible on {{ inventory_hostname }}"
+      link_names: 1
+      parse: 'full'
+    tags:
+      - slack
+
+- hosts: dev
+  name: gLibrary play
+  tasks:
+    - name: Pull gLibrary passwords
+      include_vars:
+        file: "group_vars/passwords-{{ site_name }}.yml"
+    - name: debug the glibrary vars
+      debug:
+        var: glibrary
+
+    - name: Announce the gLibrary play
+      slack:
+        domain: scigaia
+        token: "{{ slack_token }}"
+        msg: "{{ inventory_hostname }} at {{ site_name }} Logging in to gLibrary"
+        channel: "#lagos-hackfest"
+        username: "Ansible on {{ inventory_hostname }}"
+        link_names: 1
+        parse: 'full'
+      tags:
+        - slack
+
+    - name: Get token from gLibrary
+      uri:
+        HEADERS_: "Content-Type:application/json"
+        #headers: "Content-Type:application/json"
+        #body: "{{ lookup('file','files/glibrary_login.json') }}"
+        body:
+          username: "{{ glibrary['admin_user'] }}"
+          password: "{{ glibrary_admin_password }}"
+        body_format: json
+        method: POST
+        url: "{{ glibrary.url }}/v2/users/login"
+        validate_certs: false
+        return_content: yes
+        status_code: 200
+      register: glibrary_token
+      failed_when: false
+
+    - name: debug the token
+      debug:
+        var: glibrary_token.json.id
+
+    - name: Create user
+      uri:
+        #HEADERS_: "Content-Type:application/json"
+        #headers: "Content-Type:application/json"
+        hedaers:
+          - Authorization: "{{ glibrary_token.json.id}}"
+        #body: "{{ lookup('file','files/glibrary_login.json') }}"
+        body:
+          username: "hacktest"
+          password: "hacktest"
+        body_format: json
+        method: POST
+        url: "{{ glibrary.url }}/v2/users"
+        validate_certs: false
+        return_content: yes
+        status_code: 200
+      register: user_creation
+      failed_when: false
+    - name: debug user creation
+      debug:
+        var: user_creation
+
+    - name: Announce the Config play outcome
+      slack:
+        domain: scigaia
+        token: "{{ slack_token }}"
+        msg: "Created users on gLibrary"
+        channel: "#lagos-hackfest"
+        username: "Ansible on {{ inventory_hostname }}"
+        link_names: 1
+        parse: 'full'
+      tags:
+        - slack
