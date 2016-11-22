@@ -95,7 +95,7 @@ participants:
     institute: 	ACEPRD University of Jos
     orcid:
     github:
-      username: Davazano
+      username: davazano
       confirmed: yes
     twitter:
     homepage:
@@ -249,12 +249,12 @@ participants:
     twitter:
     homepage:
     email:
-- name: "Benjamin Aribisala"
-  institute:
-  orcid:
-  github:
-    username: bsegun
-    confirmed: yes
-  twitter:
-  homepage:
-  email:
+  - name: "Benjamin Aribisala"
+    institute:
+    orcid:
+    github:
+      username: bsegun
+      confirmed: yes
+    twitter:
+    homepage:
+    email:
