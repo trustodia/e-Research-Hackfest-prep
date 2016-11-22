@@ -107,6 +107,7 @@
     with_items:
       "{{ participants }}"
   - name: ensure that the repo belongs to the user
+    become: true
     file:
       state: directory
       dest: "{{ item.github.username }}"
