@@ -231,3 +231,21 @@ participants:
     twitter:
     homepage:
     email:
+  - name: "Bruce Becker"
+    institute:
+    orcid:
+    github:
+      username: brucellino
+      confirmed: yes
+    twitter:
+    homepage:
+    email:
+  - name: "Mosaku Abayomi"
+    institute:
+    orcid:
+    github:
+      username: sprintell
+      confirmed: no
+    twitter:
+    homepage:
+    email:
