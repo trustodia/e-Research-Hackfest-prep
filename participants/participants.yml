@@ -59,7 +59,7 @@ participants:
       confirmed: yes
     twitter:
     homepage:
-    email:
+    email: ezeasor.ekene@unizik.edu.ng
 
   - name: Tochukwu Eze
     institute: 	Nnamdi Azikiwe University
@@ -180,7 +180,7 @@ participants:
       confirmed: yes
     twitter:
     homepage:
-    email:
+    email: Adedeji.Fabiyi@brunel.ac.uk
 
   - name: Collins Udanor
     institute:
@@ -190,7 +190,7 @@ participants:
       confirmed: yes
     twitter:
     homepage:
-    email:
+    email: collins.udanor@unn.edu.ng
 
   - name: Toyin Enijuomelin
     institute:
@@ -200,7 +200,7 @@ participants:
       confirmed: no
     twitter:
     homepage:
-    email:
+    email: toyinenikuomehin@gmail.com
 
   - name: Ohaeri UCHECHUKWU
     institute:
@@ -210,7 +210,7 @@ participants:
       confirmed: yes
     twitter:
     homepage:
-    email:
+    email: ohaeri.uchechukwu@yahoo.com
 
   - name: Rising John Osazuwa
     institute:
@@ -220,17 +220,8 @@ participants:
       confirmed: yes
     twitter:
     homepage:
-    email:
+    email: risingosazuwa@gmail.com
 
-  - name: Ohaeri UCHECHUKWU
-    institute:
-    orcid:
-    github:
-      username: lordmila
-      confirmed: yes
-    twitter:
-    homepage:
-    email:
   - name: "Bruce Becker"
     institute:
     orcid:
@@ -239,7 +230,8 @@ participants:
       confirmed: yes
     twitter:
     homepage:
-    email:
+    email: brucellino@gmail.com
+
   - name: "Mosaku Abayomi"
     institute:
     orcid:
@@ -249,6 +241,7 @@ participants:
     twitter:
     homepage:
     email:
+
   - name: "Benjamin Aribisala"
     institute:
     orcid:
@@ -257,4 +250,4 @@ participants:
       confirmed: yes
     twitter:
     homepage:
-    email:
+    email: benjamin.aribisala@gmail.com
