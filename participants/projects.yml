@@ -5,6 +5,11 @@ projects:
     stack:
     members:
       - cudanor
+    components:
+      - oar
+      -
+    applications:
+      -
 
   - name: Addis Rivers
     repo: addisriversmonitor
@@ -44,3 +49,18 @@ projects:
     stack:
     members:
       - olutayoajayifunaab
+
+  - name: gwas-pipeline
+    repo:
+    stack:
+    members:
+      - damilare88
+  - name: ibis
+    repo:
+    stack:
+    members:
+      -
+  - name: MIPAR
+    repo:
+    stack:
+    members:
