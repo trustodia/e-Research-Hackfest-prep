@@ -1,0 +1,46 @@
+---
+projects:
+  - name: Plantisc2
+    repo:  https://github.com/cudanor/Plantisc
+    stack:
+    members:
+      - cudanor
+
+  - name: Addis Rivers
+    repo: addisriversmonitor
+    stack:  http://stackshare.io/yosephabate/addisriversmonitorstack
+    members:
+      - yosephabate
+
+  - name: AgriSERVICOM
+    repo:
+    stack:
+    members:
+
+  - name: ACEPRD
+    repo:
+    stack: http://stackshare.io/Davazano/aceprd-plant-repository
+    members:
+
+  - name: fuzzyfier
+    repo:
+    stack:
+    members:
+
+  - name: CADD
+    repo: UNIZIK-Drug-Design-and-Informatics
+    stack:
+    members:
+      - icuzochukwu
+
+  - name: ethernet
+    repo:
+    stack:
+    members:
+      - behailukorma
+
+  - name: metdata
+    repo:
+    stack:
+    members:
+      - olutayoajayifunaab

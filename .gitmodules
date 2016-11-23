@@ -1,3 +1,6 @@
 [submodule "services/Ansible/roles/ansible-role-docker"]
 	path = services/Ansible/roles/ansible-role-docker
 	url = https://github.com/mongrelion/ansible-role-docker.git
+[submodule "services/Ansible/roles/hackfest-ci-jenkins-role"]
+	path = services/Ansible/roles/hackfest-ci-jenkins-role
+	url = https://github.com/sci-gaia/hackfest-ci-jenkins-role.git

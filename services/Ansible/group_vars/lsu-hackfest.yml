@@ -24,6 +24,9 @@ prerequisites:
     - nano
     - joe
     - libffi-dev
+    - php5-curl
+    - php5-cli
+    - jq
   RedHat:
     - vim
     - make
@@ -33,3 +36,10 @@ prerequisites:
     - python-devel
     - gcc
     - libffi-dev
+    - php5-curl
+    - php5-cli
+    - jq
+glibrary:
+  admin_user: hackfest
+  admin_email: hackfest@ct.infn.it
+  url: https://glibrary.ct.infn.it:3500

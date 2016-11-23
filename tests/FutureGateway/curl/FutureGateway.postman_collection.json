@@ -1,0 +1,30 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FutureGateway",
+		"_postman_id": "29bcb300-d69d-ff55-56d5-29a1bf449802",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FutureGateway tasks list.",
+			"request": {
+				"url": "http://151.97.41.76:8888/v1.0/tasks?user=user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"application\": \"2\",\n    \"description\": \"sayhello@csgfsdk test run\",\n    \"arguments\": [\"\\\"I am saying hello!\\\"\"],\n    \"output_files\": [{\n        \"name\": \"sayhello.data\"\n    }],\n    \"input_files\": [{\n        \"name\": \"sayhello.sh\"\n    }, {\n        \"name\": \"sayhello.txt\"\n    }]\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
