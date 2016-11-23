@@ -11,7 +11,7 @@
 participants:
   - name: "Yoseph Abate"
     institute:
-    orcid:
+    orcid: 0000-0001-5098-2063
     github:
       username: yosephabate
       confirmed: yes
@@ -174,7 +174,7 @@ participants:
 
   - name: Adeji Fabiyi
     institute: Brunel University
-    orcid:
+    orcid: orcid.org/0000-0002-7797-8272
     github:
       username: adedeji19
       confirmed: yes
