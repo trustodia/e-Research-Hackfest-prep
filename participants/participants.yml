@@ -22,7 +22,7 @@ participants:
 
   - name: "ABDULAZEEZ ADELOPO"
     institute: UNIVERSITY OF IBADAN
-    orcid:
+    orcid:  http://orcid.org/0000-0001-5430-5369
     github:
       username: adelopo
       confirmed: yes
@@ -72,7 +72,7 @@ participants:
     email: td.eze@unizik.edu.ng
 
   - name: Oluwadamilare Falola
-    institute:
+    institute: Covenant University
     orcid:
     github:
       username: damilare88
@@ -93,7 +93,7 @@ participants:
 
   - name: David E Oguche
     institute: 	ACEPRD University of Jos
-    orcid:
+    orcid: 0000-0001-6263-1527
     github:
       username: davazano
       confirmed: yes
@@ -133,7 +133,7 @@ participants:
 
   - name: Segun oyeyiola
     institute: Obafemi Awolowo University, Ife.
-    orcid:
+    orcid:  orcid.org/0000-0003-4127-844X
     github:
       username: trinitysege
       confirmed: yes
@@ -143,7 +143,7 @@ participants:
 
   - name: Prof. Ikemefuna UZOCHUKWU
     institute: Nnamdi Azikiwe University Awka, Nigeria
-    orcid:
+    orcid: 0000-0002-5139-1537
     github:
       username: icuzochukwu
       confirmed: yes
