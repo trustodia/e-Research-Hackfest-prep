@@ -1,0 +1,26 @@
+---
+projects:
+  - name: Plantisc2
+    repo:  https://github.com/cudanor/Plantisc
+    stack:
+    members:
+      - cudanor
+  - name: Addis Rivers
+    repo: addisriversmonitor
+    stack:
+    members:
+      - yosephabate
+
+  - name: AgriSERVICOM
+    repo:
+    stack:
+    members:
+
+  - name: 
+    repo:
+    stack:
+    members:
+  - name:
+    repo:
+    stack:
+    members:
