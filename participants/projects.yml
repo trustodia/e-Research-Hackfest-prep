@@ -7,25 +7,43 @@ projects:
       - cudanor
     components:
       - oar
-      -
+      - Futuregateway
     applications:
-      -
+      - Python
+      - MySQL
 
   - name: Addis Rivers
     repo: addisriversmonitor
     stack:  http://stackshare.io/yosephabate/addisriversmonitorstack
     members:
       - yosephabate
+    components:
+      - oar
+      - Futuregateway
 
   - name: AgriSERVICOM
     repo:
     stack:
     members:
+    components:
+      - oar
+      - Futuregateway
+      - ophidia
+    applications:
+      - Python
+      - MySQL
 
   - name: ACEPRD
     repo:
     stack: http://stackshare.io/Davazano/aceprd-plant-repository
     members:
+      - lordmila
+    components:
+      - oar
+      - Futuregateway
+    applications:
+      - Python
+      - PostgreSQL
 
   - name: fuzzyfier
     repo:
@@ -55,12 +73,53 @@ projects:
     stack:
     members:
       - damilare88
+    components:
+      - oar
+      - Futuregateway
+    applications:
+      - Python
+      - Perl
+      - java
+      - R
+
   - name: ibis
     repo:
     stack:
     members:
       -
+    components:
+      - Futuregateway
+    applications:
+      - WEKA
+      - jena
+
   - name: MIPAR
     repo:
     stack:
     members:
+    components:
+      - oar
+      - Futuregateway
+    applications:
+      - R
+
+  - name: OAU-MET
+    repo:
+    stack:
+    members:
+    components:
+      - oar
+      - Futuregateway
+      - gLibray
+    applications:
+      - Python
+
+    - name: UI-NADA
+      repo:
+      stack:
+      members:
+      components:
+        - oar
+        - ophidia
+      applications:
+        - Python
