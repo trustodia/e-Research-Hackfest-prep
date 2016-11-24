@@ -139,3 +139,5 @@ projects:
         - blast
         - FastQC
         - Prodigal
+        - Docker
+        - Nextflow
