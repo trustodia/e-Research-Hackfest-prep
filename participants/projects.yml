@@ -12,7 +12,7 @@ projects:
       - Python
       - MySQL
 
-  - name: Addis Rivers
+  - name: AARRMS
     repo: addisriversmonitor
     stack:  http://stackshare.io/yosephabate/addisriversmonitorstack
     members:
@@ -52,7 +52,7 @@ projects:
 
   - name: CADD
     repo: UNIZIK-Drug-Design-and-Informatics
-    stack:
+    stack: https://stackshare.io/nnamdi-azikiwe-university-awka/d4pr
     members:
       - icuzochukwu
 
@@ -103,8 +103,8 @@ projects:
     applications:
       - R
 
-  - name: OAU-MET
-    repo:
+  - name: OAU-MAT
+    repo: https://github.com/trinitysege/OAU-MAT
     stack:
     members:
     components:
@@ -123,3 +123,19 @@ projects:
         - ophidia
       applications:
         - Python
+
+    - name: HPC416S
+      repo:
+      stack:
+      members:
+        - trustodia
+      components:
+        - Futuregateway
+      applications:
+        - Qiime
+        - usearch-64-bit
+        - Python
+        - Perl
+        - blast
+        - FastQC
+        - Prodigal
